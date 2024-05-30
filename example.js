@@ -15,4 +15,7 @@ function main() {
                     return `${data.customerName} - ${data.orderId}: $${data.purchaseAmount}`;
                 });
     }
+
+    // Load data from the CSV file and call the 'loadData' function
+    d3.dsv(',', '../data/purchase_orders.csv').then(loadData)
 }

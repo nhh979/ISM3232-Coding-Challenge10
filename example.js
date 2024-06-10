@@ -17,5 +17,5 @@ function main() {
     }
 
     // Load data from the CSV file and call the 'loadData' function
-    d3.dsv(',', '../data/purchase_orders.csv').then(loadData)
+    d3.dsv(',', 'data/purchase_orders.csv', d3.autoType).then(loadData)
 }
